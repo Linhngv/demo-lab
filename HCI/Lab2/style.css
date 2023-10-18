@@ -1,0 +1,285 @@
+@media not screen and (max-width: 768px) {
+    /* CSS styles for screens larger than 768px */
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.print-area{
+    margin: 30px 0;
+}
+.print-area .header{
+    left:5px;
+    background-color:rgb(87, 143, 248);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+.header img:hover{
+    filter: grayscale(70%);
+    transform: scale(1.05);
+}
+.header-text{
+    color: white;
+    width: 60%;
+    margin-left: auto;   
+}
+.header-text h1{
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom:10px;
+}
+.header-text p{
+    font-size: 18px;
+    text-indent: 30px;
+}
+.content{
+    flex-wrap: wrap;
+    display: flex;
+}
+.left-area{
+    background-image: linear-gradient(to bottom,rgb(92, 167, 253),rgb(61, 121, 234),rgb(182, 118, 247));
+    grid-template-columns: 0fr -3fr;
+}
+.left-area .contact{
+    margin-top: 100px;
+    padding: 0 0px;
+    color: white;
+}
+
+.divider{
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    border-top: 1px dashed white;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.contact h5{
+    font-weight: normal;
+    font-size: 12px;
+    margin: 3px 24%;
+}
+.contact p{
+    font-size: 12px;
+    margin: 3px 24%;
+    margin-top: 2%;
+}
+.contact .btn {
+    background-color: rgb(30, 125, 220);
+    border: none;
+    border-top-right-radius:  12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+    
+  }
+  .btn:hover{
+    background-color: gray
+  }
+.skill .divider1{
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 5px 0;
+}
+.divider1::before,
+.divider1::after {
+    flex: 1;
+    content: '';
+    border-top: 1px dashed white;
+    height: 100%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.language .divider2{
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 5px 0;
+    margin-top: 20%;
+}
+.divider2::before,
+.divider2::after {
+    flex: 1;
+    content: '';
+    border-top: 1px dashed white;
+    height: 100%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.bars{
+    display: grid;
+    margin-top: 10px;
+    padding: 0 40px;
+    text-align: center;
+    margin-top: 10%;
+}
+.bars .bar p{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height:10px;
+    background-color:deepskyblue;
+    top: 0;
+    left:0;
+    transform: translateY(-50R);
+    border-radius: 5px;
+    text-align: center;
+
+}
+.pass .divider3{
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 20px 0;
+
+}
+
+.divider3::before,
+.divider3::after {
+    flex: 1;
+    content: '';
+    border-top: 1px dashed white;
+    height: 100%;  
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.pass button{
+    margin: 10px 5px;
+    border-radius: 50%;
+    border: rgb(30, 161, 205);
+    background-color: rgb(30, 161, 205);
+    color: wheat;
+    padding: 5%;
+}
+.right-area{
+    width: 60%;
+    margin-left: 10%;
+    font-size: 15px;
+  
+}
+.right-area .pro{
+margin-top: 2%;
+}
+.right-area .divider4{
+    color:rgb(69, 69, 207);
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.right-area .divider4::after{
+    flex: 1;
+    content: '';
+    border-top: 8px dotted rgb(68, 192, 249); 
+    text-align: center;
+    margin-left: 10px;
+}
+.right-area p{
+    color:gray;
+}
+.right-area .divider4 button{
+    border-radius: 70%;
+    font-size: 20px;
+    border: blue;
+    width: 5%;
+    background-color: rgb(69, 69, 207);
+    color:rgb(244, 235, 217);
+}
+.edu{
+    margin: 5px 10px;
+}
+.edu .p {
+   margin-left: 5%;
+
+}
+
+.vl {
+    border-left: 2px solid darkblue;
+    height: 5%;
+    left: 60%;
+    margin-left: 8%;
+    top: 0;
+  }
+.edu .p h5{
+    margin-left: 12%;
+    font-size: 13px;
+}
+.edu .p h6{
+    font-weight: normal;
+    margin-left: 12%;
+    margin-bottom: 2%;
+    font-size: 13px;
+ }
+.vl p{
+    margin-left: 9%;
+    color: rgba(17, 14, 14, 0.622);
+  }
+.edu .p .left p{
+    color:gray;
+    position:absolute;
+}
+.exp{
+    margin: 5px 10px;
+}
+.exp .p {
+   margin-left: 5%;
+
+}
+.exp .p h5{
+    margin-left: 12%;
+    font-size: 13px;
+}
+.exp .p h6{
+    font-weight: normal;
+    margin-left: 12%;
+    margin-bottom: 2%;
+    font-size: 13px;
+ }
+ .exp .p .left p{
+    color: gray;
+    position:absolute;
+}

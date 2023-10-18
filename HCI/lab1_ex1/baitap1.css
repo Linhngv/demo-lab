@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+
+:root{
+    --white:#fff;
+    --box-shadow:0 .5em 1em #333;
+    --boder:.2em solid #333;
+    --outline: .1em solid #333;
+    --outline-hover: .2em solid var(--back);
+}
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; padding:0 ;
+    box-sizing: border-box ;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+html{
+    font-size: 40%;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+
+.header{
+    position:fixed ;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2em 7%;
+    background: #fff;
+}
+.header .logo{
+    font-size: 20px;
+    font-weight: bolder;
+    color:black;
+}
+header .logo:hover{
+    color:rgb(127, 5, 127);
+}
+header .navbar a{
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+header .navbar a:hover{
+    color:rgb(127, 5, 127);
+
+}
+#menu-icon{
+    color: #fff;
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.text{
+    background-image: linear-gradient(to bottom right, #de4276, #4d77f6);
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    gap: 5rem;
+}
+.content{
+    margin-top: 10%;
+}
+.img{
+    float: left;
+    padding: 50px;
+ 
+}
+.content h2{
+    margin-top: 10%;
+    font-size: 40px;
+    font-weight: 600;
+}
+.content h1{
+    color: #fff;
+    font-size: 50px;
+    line-height:1 ;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.content p{
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+}
+.btn{
+    background: #fff;
+    display: inline-block;
+    box-direction:1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500 ;
+    color: black;
+    margin-bottom: 40px;
+}
+.btn2{
+    background: red;
+    color: #fff;
+    display: inline-block;
+    box-direction:1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500 ;
+    margin-bottom: 40px;
+
+}
+footer{
+    background: black;
+    text-align: center;
+    padding: 5rem 20%;
+    color: #fff;
+    font-size: 20px;
+}
+footer:hover{
+    color:  rgb(127, 5, 127);
+}
